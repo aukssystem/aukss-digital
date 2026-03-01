@@ -1,11 +1,201 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Aukss Digital</title>
+  <meta name="description" content="Systems and structures that turn strategy into execution." />
+  <style>
+    :root{
+      --bg:#0b0d10;
+      --card:#11151b;
+      --text:#e9eef6;
+      --muted:#a9b4c2;
+      --line:#222a35;
+      --accent:#c9a227; /* subtle gold */
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      background:radial-gradient(1200px 600px at 20% 0%, #121826 0%, var(--bg) 55%);
+      color:var(--text);
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, "Apple Color Emoji","Segoe UI Emoji";
+      line-height:1.6;
+    }
+    a{color:inherit; text-decoration:none}
+    .wrap{
+      max-width:980px;
+      margin:0 auto;
+      padding:72px 20px 90px;
+    }
+    header{
+      display:flex;
+      justify-content:space-between;
+      align-items:flex-start;
+      gap:16px;
+      margin-bottom:36px;
+    }
+    .brand{
+      display:flex;
+      flex-direction:column;
+      gap:10px;
+    }
+    .kicker{
+      display:inline-flex;
+      align-items:center;
+      gap:10px;
+      color:var(--muted);
+      font-size:14px;
+      letter-spacing:.12em;
+      text-transform:uppercase;
+    }
+    .dot{
+      width:8px;height:8px;border-radius:50%;
+      background:var(--accent);
+      box-shadow:0 0 0 4px rgba(201,162,39,.12);
+      flex:0 0 auto;
+    }
+    h1{
+      margin:0;
+      font-size:46px;
+      letter-spacing:-.02em;
+      line-height:1.15;
+    }
+    .lead{
+      margin:10px 0 0;
+      color:var(--muted);
+      font-size:18px;
+      max-width:720px;
+    }
+    .pillbar{
+      display:flex;
+      gap:10px;
+      flex-wrap:wrap;
+      margin-top:18px;
+    }
+    .pill{
+      border:1px solid var(--line);
+      background:rgba(17,21,27,.6);
+      padding:8px 12px;
+      border-radius:999px;
+      font-size:13px;
+      color:var(--muted);
+    }
+    .grid{
+      display:grid;
+      grid-template-columns:repeat(2, minmax(0,1fr));
+      gap:16px;
+      margin-top:26px;
+    }
+    .card{
+      border:1px solid var(--line);
+      background:linear-gradient(180deg, rgba(17,21,27,.85), rgba(17,21,27,.55));
+      border-radius:16px;
+      padding:18px 18px 14px;
+      box-shadow:0 10px 30px rgba(0,0,0,.25);
+    }
+    .card h2{
+      margin:0 0 8px;
+      font-size:18px;
+      letter-spacing:.01em;
+      display:flex;
+      align-items:center;
+      gap:10px;
+    }
+    .tag{
+      font-size:12px;
+      color:var(--muted);
+      border:1px solid var(--line);
+      padding:3px 8px;
+      border-radius:999px;
+    }
+    ul{
+      margin:10px 0 0;
+      padding-left:18px;
+      color:var(--muted);
+    }
+    li{margin:6px 0}
+    footer{
+      margin-top:34px;
+      padding-top:18px;
+      border-top:1px solid var(--line);
+      color:var(--muted);
+      font-size:13px;
+      display:flex;
+      justify-content:space-between;
+      gap:12px;
+      flex-wrap:wrap;
+    }
+    .note strong{color:var(--text)}
+    @media (max-width:760px){
+      h1{font-size:38px}
+      .grid{grid-template-columns:1fr}
+      header{flex-direction:column}
+    }
+  </style>
 </head>
 <body>
-  <h1>Aukss Digital</h1>
-  <p>Systems and structures that turn strategy into execution.</p>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <div class="kicker"><span class="dot"></span>Digital products</div>
+        <h1>Aukss Digital</h1>
+        <p class="lead"><strong>Systems and structures that turn strategy into execution.</strong> A lightweight library of operating models, process patterns, and decision frameworks.</p>
+        <div class="pillbar">
+          <div class="pill">Process clarity</div>
+          <div class="pill">Operating rhythm</div>
+          <div class="pill">Ownership</div>
+          <div class="pill">Decision systems</div>
+        </div>
+      </div>
+    </header>
+
+    <section class="grid">
+      <div class="card">
+        <h2>Process Architecture <span class="tag">structure</span></h2>
+        <ul>
+          <li>End-to-end process mapping</li>
+          <li>Interfaces between teams</li>
+          <li>Bottleneck identification</li>
+          <li>Value stream clarity</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2>Operating Rhythm <span class="tag">cadence</span></h2>
+        <ul>
+          <li>Weekly / monthly execution cadence</li>
+          <li>KPI logic & control loops</li>
+          <li>Escalation pathways</li>
+          <li>Simple tracking structure</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2>Roles & Accountability <span class="tag">ownership</span></h2>
+        <ul>
+          <li>Role definitions</li>
+          <li>Responsibility architecture</li>
+          <li>Hiring clarity</li>
+          <li>Competency signals</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2>Decision Systems <span class="tag">control</span></h2>
+        <ul>
+          <li>Decision rights design</li>
+          <li>Firefighting vs managed mode</li>
+          <li>Control mechanisms</li>
+          <li>Execution stability under pressure</li>
+        </ul>
+      </div>
+    </section>
+
+    <footer>
+      <div class="note">This page is intentionally simple: themes first, products later.</div>
+      <div class="note">© Aukss</div>
+    </footer>
+  </div>
 </body>
 </html>
